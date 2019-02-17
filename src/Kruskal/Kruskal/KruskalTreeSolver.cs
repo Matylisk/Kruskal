@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace Kruskal
@@ -7,18 +9,20 @@ namespace Kruskal
     {
         List<Tree> SetOfTrees = new List<Tree>();
 
-        public void Solve(Graph graph)
+        public ComputationStatistics Solve(Graph graph)
         {
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
             SetOfTrees = new List<Tree>();
             foreach (Node node in graph.Nodes)
             {
                 MakeSet(node);
             }
 
-            var sortedEdges = graph.Edges.OrderBy(e => e.Weight).ToArray();
-            foreach (Edge edge in sortedEdges)
-            {
-                
+            SortEdges(graph);
+
+            foreach (Edge edge in graph.Edges)
+            {                
                 if(edge.Origin.AssignedTree.HeadLabel != edge.Destination.AssignedTree.HeadLabel)
                 {
                     edge.IsPartOfSolution = true;
@@ -27,6 +31,16 @@ namespace Kruskal
                 if (SetOfTrees.Count < 2)
                     break;
             }
+            stopwatch.Stop();
+            return new ComputationStatistics(stopwatch.Elapsed,graph.Nodes.Count,graph.Edges.Count);
+        }
+
+        private void SortEdges(Graph graph)
+        {
+            //sort the edges by their weight
+            graph.Edges.Sort((a, b) => a.Weight.CompareTo(b.Weight));
+            //implement icomparer for edge:
+            //graph.Edges.Sort();
         }
 
         private void Union(Node origin, Node destination)

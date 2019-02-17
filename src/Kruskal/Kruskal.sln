@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kruskal", "Kruskal\Kruskal.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3F5D2500-814B-40CA-B7A6-AF2D2644A9A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kruskal.Tests", "..\..\test\Kruskal.Tests\Kruskal.Tests.csproj", "{9FC46E6F-928F-4381-846F-FEB87AA5209B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kruskal.Tests", "..\..\test\Kruskal.Tests\Kruskal.Tests.csproj", "{9FC46E6F-928F-4381-846F-FEB87AA5209B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMst", "SimpleMst\SimpleMst.csproj", "{550EAA4C-3685-4318-9DD9-725DD5BF2ACD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{9FC46E6F-928F-4381-846F-FEB87AA5209B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FC46E6F-928F-4381-846F-FEB87AA5209B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FC46E6F-928F-4381-846F-FEB87AA5209B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{550EAA4C-3685-4318-9DD9-725DD5BF2ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{550EAA4C-3685-4318-9DD9-725DD5BF2ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{550EAA4C-3685-4318-9DD9-725DD5BF2ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{550EAA4C-3685-4318-9DD9-725DD5BF2ACD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
