@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kruskal.Tests", "..\..\test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMst", "SimpleMst\SimpleMst.csproj", "{550EAA4C-3685-4318-9DD9-725DD5BF2ACD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lehre.Kruskal", "Lehre.Kruskal\Lehre.Kruskal.csproj", "{D7E20061-58AE-4719-BAB1-8F5A26A326E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lehre.Kruskal.App", "Lehre.Kruskal.App\Lehre.Kruskal.App.csproj", "{BEEB39E3-C649-4A4C-B8C5-658225028A0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{550EAA4C-3685-4318-9DD9-725DD5BF2ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{550EAA4C-3685-4318-9DD9-725DD5BF2ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{550EAA4C-3685-4318-9DD9-725DD5BF2ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E20061-58AE-4719-BAB1-8F5A26A326E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E20061-58AE-4719-BAB1-8F5A26A326E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E20061-58AE-4719-BAB1-8F5A26A326E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E20061-58AE-4719-BAB1-8F5A26A326E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEEB39E3-C649-4A4C-B8C5-658225028A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEB39E3-C649-4A4C-B8C5-658225028A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEB39E3-C649-4A4C-B8C5-658225028A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEB39E3-C649-4A4C-B8C5-658225028A0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
