@@ -11,7 +11,7 @@ namespace Lehre.Kruskal.App
         static void Main(string[] args)
         {
             Console.WriteLine("CSV Datei:");
-            string csvDateiPfad = Console.ReadLine().Trim();
+            string csvDateiPfad = Console.ReadLine().Trim('"').Trim();
             try
             {
                 Netzwerk netzwerk = Formatierer.LeseNetzwerk(csvDateiPfad);
